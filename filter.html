@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./filter.css">
+    <link rel="stylesheet" href="./src/style/filter.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                         <p>Модель</p>
                         <div class="item-checkboxes">
                             <label class="custom-checkbox">
-                                <input class="hidden-checkbox" type="checkbox">
+                                <input class="hidden-checkbox" type="checkbox" checked>
                                 <span class="checkbox">
                                     <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
                                 </span>
@@ -33,13 +33,41 @@
                                 <span class="checkbox">
                                     <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
                                 </span>
-                                <span>Dream</span>
+                                <span>Voyah Dream</span>
                             </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-body">
+                    <div class="car-cards">
+                        <div class="car-card">
+                            <div class="swiper model-swiper">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="https://voyah.by/wp-content/uploads/2023/10/черный_наличие-discont.png" alt="car-image"></div>
+                                  <div class="swiper-slide"><img src="https://voyah.by/wp-content/uploads/2023/09/11block_3.jpg" alt="car-image"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="model">
+                                <p class="model-name">Dream</p>
+                                <p class="model-modification">Flagship +</p>
+                            </div>
+                            <div class="stock">
+                                <span class="year">2023</span>
+                                <span class="instock">В наличии</span>
+                            </div>
+                            <ul class="characteristic-list">
+                                
+                            </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="./src/js/swiper@10.3.1_swiper-bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

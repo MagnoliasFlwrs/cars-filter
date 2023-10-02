@@ -1,0 +1,126 @@
+@import url(./swiper@10.3.1_swiper-bundle.min.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.filter {
+    width: 100%;
+
+    .content {
+        max-width: calc(1400px + 16px*2);
+        padding: 0 16px;
+        margin: 0 auto;
+
+        .filter-box {
+            display: flex;
+            gap: 50px;
+            .filter-variables {
+                display: flex;
+            flex-direction: column;
+            gap: 30px;
+                .filter-item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    p {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .item-checkboxes {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                }
+            }
+            .filter-body {
+                width: 100%;
+
+                .car-cards {
+                    width: 100%;
+                    display: flex;
+                    gap: 50px;
+
+                    .car-card {
+                        width: 30%;
+                        padding: 20px;
+
+                        .model-swiper {
+                            width: 100%;
+                            height: 200px;
+                            .swiper-slide {
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                            .swiper-pagination-bullet {
+                                background: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+        }
+    }
+}
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.custom-checkbox .checkbox {
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.custom-checkbox input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+.checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #C6CAE2;
+    border-radius: 2px;
+}
+.custom-checkbox span {
+    color: #1A2A37;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    display: none;
+}
+.custom-checkbox input:checked ~ .checkbox .checkmark {
+    display: block;
+}
+.custom-checkbox input:checked ~ .checkbox {
+    background: #EE8F00;
+    border: 1px solid #EE8F00;
+}
